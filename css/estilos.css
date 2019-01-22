@@ -1,0 +1,44 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+header {
+    background: greenyellow;
+    color: blue;
+}
+
+body {
+    background: gray;
+}
+
+.link {
+    color: blue
+}
+
+
+/* selector de etiqueta header - section - article -nav*/
+
+
+/* header {
+     background: greenyellow;
+ } */
+
+
+/* selector descendente*/
+
+
+/* body header div nav ol li a */
+
+
+/* selector de clase . */
+
+
+/* .link */
+
+
+/* selector de id */
+
+
+/* #principal */
