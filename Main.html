@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!--Cabecera del proyecto-->
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="Archivos/images/logo.png" alt="Logo">
             </figure>
-            <nav>
+            <nav class="menu">
                 <!--Menu de Navegaciones-->
                 <ol>
                     <li>
@@ -35,41 +35,44 @@
             </nav>
         </div>
     </header>
-    <section id="principal">
+    <section id="principal" class="hero">
         <h1>Hola! soy <strong>Luis Maria Garcia Salado</strong> Desarrollador <br> <strong>JavaScript</strong> con <br> pasion por la <strong>Enseñanza</strong></h1>
         <img src="Archivos/images/hero.jpg" width="500" height="400">
     </section>
-    <section>
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3 class="link">Platzi Video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Puedes verlo en:</strong> www.Platzi.com/native</small></p>
-            <p> Parrafo descriptivo</p>
-            <img src="Archivos/images/platzi-video-react-native.png" alt="" width="500">
+        <article class="project">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.Platzi.com/native</small></p>
+            <p class="project-description"> Parrafo descriptivo</p>
+            <figure class="project-imageConteiner">
+                <img class="project-image" src="Archivos/images/platzi-video-react-native.png" alt="" width="500">
+            </figure>
+            
         </article>
     </section>
     <section id="experiencia">
         <h2>Mas sobre mi Experiencia</h2>
-        <article>
-            <figure>
-                <img src="Archivos/images/platzi-conf.jpg" width="500">
+        <article class="event">
+            <figure class="event-imageConteiner">
+                <img class="even-image" src="Archivos/images/platzi-conf.jpg" width="500">
             </figure>
-            <h3>PlatziConf Mexico 2018</h3>
-            <p>Parrafo descriptivo</p>
-            <a href="https://www.youtube.com/watch?v=VRlFcMIv-Lc" target="_blank">Ver Platica</a>
+            <h3 class="event-title">PlatziConf Mexico 2018</h3>
+            <p class="event-description">Parrafo descriptivo</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=VRlFcMIv-Lc" target="_blank">Ver Platica</a>
         </article>
     </section>
-    <section id="trabajemos_juntos">
+    <section id="trabajemos_juntos" class="contacto">
 
-        <form action="">
+        <form action="/suscripcion/" class="form-email">
             <h3>Creamos algo juntos?</h3>
             <input type="email" placeholder="Dejame tu email" required>
             <input type="submit" value="Enviar">
         </form>
     </section>
-    <footer>FOOTER</footer>
+    <footer class="footer">FOOTER</footer>
     <!--Pie de Pagina-->
 
 </body>
