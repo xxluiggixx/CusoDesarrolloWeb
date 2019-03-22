@@ -10,8 +10,28 @@ header {
 }
 
 body {
-    background: gray;
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+    
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+}
+h1{
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}
+
 
 .link {
     color: blue
