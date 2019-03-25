@@ -2,12 +2,15 @@
 selectores
 declaraciones
 propiedades
-valores*/
+valores
 
-header {
-    background: greenyellow;
-    color: blue;
-}
+/* gris oscuro = #1d252c:
+gris claro = #626262;
+background gris = #1b2127; 
+celeste =  #026fff;
+*/
+
+
 
 body {
     font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
@@ -28,8 +31,54 @@ h1{
     line-height: 1.5;
     font-size: 40px;
     letter-spacing: -.2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    color: white;
     /* text-decoration: underline; */
+    /* margin: 100px 50px 20px 30px; */
+    margin: 0 auto; /*centrar la imagen o el elemento*/
+}
+h1 strong{
+    color:#026fff;
+}
+.project{
+    /* border-top: 10px double ;
+    border-right: 10px double;
+    border-left:10px double ;
+    border-bottom: 10px double; */
+    /* border-color: red;
+    border-style: double;
+    border-width: 15px; */
+    border: 1px solid gray;
+    border-radius: 10px; /*bordes redondeados*/
+    border-top-left-radius: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.project-details {
+    width: 500px; /*estamos asignando un ancho al detalle*/
+   
+}
+.project-imageConteiner{
+    width: 500px; /*estamos asignando un ancho al detalle imagen*/
+
+}
+.hero {
+    height: 300px;
+    background-image: url('../Archivos/images/hero.jpg');
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.header {
+    background-color: #1b2127;
+    color: white;
+}
+.header a{
+    color: white;
+    text-decoration: none;
 }
 
 
