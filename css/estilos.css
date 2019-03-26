@@ -35,7 +35,8 @@ h1{
     color: white;
     /* text-decoration: underline; */
     /* margin: 100px 50px 20px 30px; */
-    margin: 0 auto; /*centrar la imagen o el elemento*/
+   /* margin: 0 auto; /*centrar la imagen o el elemento*/
+   margin: 0;
 }
 h1 strong{
     color:#026fff;
@@ -71,19 +72,68 @@ h1 strong{
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+   
 }
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu{
+    height: inherit; /*esta propiedad debe heredarece en cada uno
+    Menu ->Header ol -> header ol li -> header a*/
+}
+.header ol{
+    display: flex;
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+    
+}
+.header ol li{
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+
 }
 .header a{
     color: white;
     text-decoration: none;
+    align-items: center;
+    display: flex;
+    height: inherit; /*esta propiedad debe heredarece en cada uno*/
+    padding: 0 10px;
+}
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
 }
 
 
 .link {
     color: blue
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
 }
 
 
