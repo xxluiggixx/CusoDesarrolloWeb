@@ -39,8 +39,17 @@ h1{
    margin: 0;
 }
 h1 strong{
-    color:#026fff;
+    color: #026fff;
 }
+ h2{
+    color:#026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .project{
     /* border-top: 10px double ;
     border-right: 10px double;
@@ -54,7 +63,27 @@ h1 strong{
     border-top-left-radius: 10px;
     margin-bottom: 15px;
     border-bottom-left-radius: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
 
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
 }
 
 .project-details {
@@ -83,6 +112,12 @@ h1 strong{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    /* fijar cabecera */
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+   
 }
 
 .menu{
@@ -134,6 +169,109 @@ figure{
 }
 .footer a{
     color: white;
+}
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.event{
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+
+}
+.event-description{
+    text-align: left;
+}
+.event-url{
+    border: 1px solid #056fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.contacto{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social{
+
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+
+}
+.social-link.twitter{
+    background-image: url('../Archivos/images/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../Archivos/images/facebook.svg');
+    /* background-size: 50px 50px; */
+}
+.social-link.github{
+    background-image: url('../Archivos/images/github.svg');
+    /* background-size: 50px 50px; */
+}
+.social-link.instagram{
+    background-image: url('../Archivos/images/instagram.svg');
+    /* background-size: 50px 50px; */
+}
+.form-email input{
+    border-color: gray;
+    padding: 10px 20px 10px 30px;
+    background-image: url('../Archivos/images/envelope.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    /* margin: 10px auto 0; */
+
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
 }
 
 
