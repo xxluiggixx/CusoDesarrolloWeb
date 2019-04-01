@@ -96,14 +96,17 @@ h1 strong{
 }
 .hero {
     height: 300px;
-    background-image: url('../Archivos/images/hero.jpg');
+    /* background-image: url('../Archivos/images/hero.jpg'); */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500px 300px;
+    background-repeat: no-repeat; */
+    /* background-position-x: right; */
     display: flex;
     align-items: center;
-   
+    justify-content: space-between;
+}
+.hero-image{
+    object-fit: cover; /*  */
 }
 .header {
     background-color: #1b2127;
@@ -176,7 +179,7 @@ figure{
 }
 .event-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /**/
     justify-content: space-between;
 }
 .event{
@@ -272,6 +275,21 @@ figure{
 }
 .form-email h3{
     font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
+}
+
+.container{
+    /*
+    se crea esta clase para que no tome todo el tamaño de la web
+    hay q heredar todas las propiedades de la clase head (en este caso),
+    para q los demas elementos tambien las hereden
+    */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-content: inherit;
+    height:inherit;
+    flex-wrap: inherit;
 }
 
 
