@@ -10,7 +10,10 @@ background gris = #1b2127;
 celeste =  #026fff;
 */
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif; /*fuente de texto*/
@@ -67,6 +70,7 @@ h1 strong{
     padding: 10px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .project strong{
@@ -84,15 +88,20 @@ h1 strong{
 }
 .project-description{
     font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project-details {
-    width: 500px; /*estamos asignando un ancho al detalle*/
+    width: 50%; /*estamos asignando un ancho al detalle*/
    
 }
 .project-imageConteiner{
-    width: 500px; /*estamos asignando un ancho al detalle imagen*/
+    width: 50%; /*estamos asignando un ancho al detalle imagen*/
 
+}
+.project-imageConteiner Img {
+    max-width: 100%; /* Ocupa el tamaño del 100% del padre*/
 }
 .hero {
     height: 300px;
@@ -104,6 +113,8 @@ h1 strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 70px;
+    flex-wrap: wrap;
 }
 .hero-image{
     object-fit: cover; /*  */
@@ -114,12 +125,14 @@ h1 strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     height: 70px;
     /* fijar cabecera */
     width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+    
    
 }
 
@@ -166,6 +179,8 @@ figure{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 .footer img{
     vertical-align: middle;
@@ -226,6 +241,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social{
 
@@ -283,7 +299,8 @@ figure{
     hay q heredar todas las propiedades de la clase head (en este caso),
     para q los demas elementos tambien las hereden
     */
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1; /*ocupa todo el espacio del flex*/
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -292,6 +309,66 @@ figure{
     flex-wrap: inherit;
 }
 
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+        display: block;
+    }
+    .header ol li{
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .logo{
+        text-align: center;
+    }
+    .project {
+        display: block;
+    }
+    .project-date, .project-date, .project-url{
+        margin: .3em 0; /* hacer los margenes responsivos*/
+    }
+    .project-imageConteiner{
+        width: auto;
+        text-align: center;
+    }
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-url{
+        font-size: 1em;
+    }
+    .project-course{
+        font-size: 1em;
+    }
+    .project-description{
+        font-size: .8em;
+    }
+    .project-date{
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .project-details{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px){
+    
+}
 
 /* selector de etiqueta header - section - article -nav*/
 
