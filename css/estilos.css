@@ -131,7 +131,7 @@ h1 strong{
     width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
-    position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+   /* position: sticky;*/ /* Hacemos que la cabecera tenga una posición fija */
     
    
 }
@@ -358,6 +358,9 @@ figure{
     }
     .project-date{
         font-size: 1em;
+    }
+    .event-list{
+        justify-content: space-around;
     }
 
 }
