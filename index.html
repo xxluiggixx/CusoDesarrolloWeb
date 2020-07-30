@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <i class="icon-menu"></i>
+    <i class="icon-menu burger-button" id="Burger-menu"></i>
     <header class="header">
         <div class="container">
 
@@ -97,9 +97,9 @@
 
         <h2 class="event-list-title">Mas sobre mi Experiencia</h2>
     </div>
-    <div class="flexible-video">
+<!--     <div class="flexible-video">
         <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/c4JHehHx_EQ?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
     
     <section id="experiencia" class="event-list">
         <div class="container">
@@ -186,5 +186,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        /* Media queries con JavaScript*/
+        const ipad = window.matchMedia('screen and (max-width: 767px)');
+        const menu = document.querySelector('.menu');
+        const burgerMenu = document.querySelector('#Burger-menu');
+        ipad.addListener((event)=>{if (event.matches){
+            burgerMenu.addEventListener('click', ()=>{menu.classList.toggle('is-active')});
+        }else{
+            burgerMenu.removeEventListener('click', ()=>{menu.classList.toggle('is-active')});
+        }});
+    </script>
 </body>
 </html>
